@@ -7,6 +7,7 @@ int main() {
     float height;
     char university[100];
 
+    
     printf("Enter your full name: ");
     fgets(fullName, sizeof(fullName), stdin);
     printf("Enter your age: ");
