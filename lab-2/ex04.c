@@ -7,6 +7,7 @@ int main() {
     float programming, physics, calculus;
     float gpa;
 
+    
     printf("Enter your Name: ");
     fgets(name, sizeof(name), stdin);
     printf("Enter your student ID: ");
