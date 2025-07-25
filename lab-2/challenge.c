@@ -5,6 +5,7 @@ int main(void) {
     int min, max, sum;
     float average;
 
+    
     printf("Enter integer #1: ");
     if (scanf("%d", &num1) != 1)
         return 1;
