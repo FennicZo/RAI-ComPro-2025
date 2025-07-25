@@ -29,7 +29,7 @@ int main(void) {
         max = num3;
 
     sum = num1 + num2 + num3;
-    average = sum / 3.0f;
+    average = sum / 3.0;
 
     printf("\nResults:\n");
     printf("Minimum: %d\n", min);
