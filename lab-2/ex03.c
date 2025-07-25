@@ -8,6 +8,7 @@ int main() {
     char gender;
     char quali[50];
 
+    
     printf("Enter your Name: ");
     fgets(name, sizeof(name), stdin);
     printf("Enter your Age: ");
