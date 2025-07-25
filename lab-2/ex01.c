@@ -5,6 +5,7 @@ int main() {
     float myFloat;
     char myChar;
 
+    
     printf("Please enter an integer value: ");
     scanf("%d", &myInt);
     printf("You entered %d\n", myInt);
