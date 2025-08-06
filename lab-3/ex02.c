@@ -9,7 +9,8 @@ int main() {
     if (number >= 1 && number <= 100) {
         if (number % 2 == 0) {
             printf("%d is even\n", number);
-        } else {
+        } 
+        else {
             printf("%d is odd\n", number);
         }
     } 
