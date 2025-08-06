@@ -11,7 +11,8 @@ int main() {
 
     if (num1 == num2) {
         printf("Match\n");
-    } else {
+    } 
+    else {
         printf("Does not match. Try again\n");
     }
 
