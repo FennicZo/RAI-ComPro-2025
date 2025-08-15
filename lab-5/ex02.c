@@ -8,7 +8,7 @@ int main () {
     for (int i = 0; i < size; i++) {
         reverse[i] = original[size - 1 - i];
     }
-    
+
     printf("Reversed Array: ");
     
     for (int i = 0; i < size; i++) {
