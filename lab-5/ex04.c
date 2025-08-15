@@ -10,7 +10,8 @@ int main () {
 
         if (values[i] % 2 == 0) {
             even++;
-        } else {
+        } 
+        else {
             odd++;
         }
     }
