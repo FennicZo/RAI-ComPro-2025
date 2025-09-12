@@ -1,25 +1,26 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int main() {
-    struct book {
-        char name[50];
-        float price;
-        float discount;
-    } book1;
-    
-    printf ("Enter book name : ");
-    scanf ("%s",book1.name);
-    printf ("Enter book price : ");
-    scanf ("%f",&book1.price);
-    
-    book1.discount = 0.1*book1.price;
-    printf ("\n\n\n\nBook : %s\n",book1.name);
-    printf ("Price : %.2f\n",book1.price);
-    printf ("Discount 10 percent : %.2f\n"
-
-    "Total price : %.2f\n",
-    book1.discount,
-    book1.price - book1.discount);
-
+    struct profile{
+    char name[20];
+    int age;
+    } s[10];
+    int i;
+    struct profile *sPtr;
+    sPtr = s;
+    for (i=0; i<10; i++) {
+        printf("Student # %d\n\tName : ", i+1 );
+        scanf("%s",sPtr->name);
+        printf("\tAge : ");
+        scanf("%d",&(sPtr->age));
+        sPtr++;
+    }
+    sPtr -= 10;
+    for (i=0; i<10; i++) {
+        if ((sPtr->age) > 20)
+            printf("\n%s, %d",sPtr->name,sPtr->age);
+            sPtr++;
+    }
+    printf("\n");
     return 0;
 }
