@@ -1,26 +1,24 @@
 #include<stdio.h>
+#include<math.h>
+
+float triangle_area(float,float,float);
 
 int main() {
-    struct profile{
-    char name[20];
-    int age;
-    } s[10];
-    int i;
-    struct profile *sPtr;
-    sPtr = s;
-    for (i=0; i<10; i++) {
-        printf("Student # %d\n\tName : ", i+1 );
-        scanf("%s",sPtr->name);
-        printf("\tAge : ");
-        scanf("%d",&(sPtr->age));
-        sPtr++;
-    }
-    sPtr -= 10;
-    for (i=0; i<10; i++) {
-        if ((sPtr->age) > 20)
-            printf("\n%s, %d",sPtr->name,sPtr->age);
-            sPtr++;
-    }
-    printf("\n");
+    float a, b, c, area;
+    
+    printf("Enter three sides of the triangles: ");
+    scanf("%f %f %f", &a, &b, &c);
+    
+    area = triangle_area(a, b, c);
+    
+    printf("Area of the triangle = %.2f\n", area);
+    
     return 0;
+}
+
+float triangle_area(float a, float b, float c) {
+    float s = (a+b+c)/2.0;
+    float area = sqrt(s*(s-a)*(s-b)*(s-c));
+    
+    return area;
 }
